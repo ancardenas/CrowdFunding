@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subasta1.FXMLDocumentController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a5bfd7" height="150.0" layoutX="73.0" layoutY="208.0" opacity="0.42" stroke="BLACK" strokeType="INSIDE" width="446.0" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="usu" layoutX="268.0" layoutY="239.0" />
+      <Label layoutX="126.0" layoutY="243.0" text="Nombre de usuario" />
+      <Label layoutX="169.0" layoutY="287.0" text="Contraseña" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="199.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/crowdfunding%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ingresar" layoutX="274.0" layoutY="384.0" mnemonicParsing="false" onAction="#actionIngresar" text="Ingresar" />
+      <PasswordField fx:id="contraseña" layoutX="268.0" layoutY="283.0" />
+      <Button fx:id="registrar" layoutX="467.0" layoutY="384.0" mnemonicParsing="false" onAction="#actionRegistrar" text="Registrarse" />
+      <Label fx:id="label" layoutX="360.0" layoutY="32.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
